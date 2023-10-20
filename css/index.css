@@ -478,6 +478,7 @@ nav .container {
   margin-bottom: 1rem;
 }
 
+
 .about-us .about-us-flex .info-div .icon-div {
   margin-right: 1rem;
 }
@@ -485,6 +486,13 @@ nav .container {
 .about-us .about-us-flex .info-div .icon-div img {
   width: 4.5rem;
 }
+
+.about-us .about-us-flex .info-div .icon-div i {
+  font-size: 3.7rem;
+  color: var(--primary);
+  width: 5rem;
+}
+
 
 .about-us .about-us-flex .information .title {
   font-size: 20px;
@@ -869,7 +877,7 @@ nav .container {
   filter: grayscale(100%);
 }
 
-.testimonials .flex .testimonials-side .ratings-grid .ratings-card:hover{
+.testimonials .flex .testimonials-side .ratings-grid .ratings-card:hover {
   filter: inherit;
 }
 
@@ -1279,9 +1287,11 @@ footer a:hover {
   .service-modal .modal-body {
     flex-direction: column;
   }
+
   .service-modal .modal-body .img-div {
     width: 100%;
   }
+
   .service-modal .modal-body .info-div {
     width: 100%;
   }
