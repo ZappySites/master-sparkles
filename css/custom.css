@@ -2,8 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 /* Color Set */
 :root {
-  --primary: rgb(0, 134, 255);
-  --secondary: rgb(255, 121, 0);
+  --primary: #0086ff;
+  --secondary: #ff7900;
   --warning: rgb(9, 97, 68);
   --success: rgb(236, 225, 136);
   --danger: rgb(255, 77, 0);
@@ -53,7 +53,7 @@
   --upper-nav-bg-color: var(--primary);
 
   /* Hero */
-  --hero-overlay: rgba(0, 0, 0, 0.85);
+  --hero-overlay: linear-gradient(90deg, rgba(0,32,60,0.9473039215686274) 0%, rgba(0,0,0,0.8436624649859944) 38%, rgba(0,0,0,0.7876400560224089) 64%);
   --hero-heading-color: var(--white);
   --hero-font-size: 50px;
   --hero-font-weight: 600;

@@ -168,7 +168,7 @@ nav{
 }
 
 .nav-hero .nav-hero-flex .hero-info {
-  width: 65%;
+  width: 70%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -295,7 +295,7 @@ nav{
   font-weight: var(--hero-font-weight);
   font-size: var(--hero-font-size);
   line-height: 60px;
-  margin-bottom: 2.5rem;
+  margin-bottom: 1rem;
 }
 
 .nav-hero .hero h1 span {
@@ -337,8 +337,8 @@ nav{
   color: var(--hero-paragraph-color);
   font-weight: var(--hero-paragraph-font-weight);
   text-align: start;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   text-transform: capitalize;
 }
 
