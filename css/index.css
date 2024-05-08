@@ -16,24 +16,30 @@ body {
 
 
 /* Top Information */
-.top-information {
-  background-color: var(--upper-nav-bg-color);
+
+.upper-nav{
+  background-color: var(--primary);
 }
 
-.top-information .container a {
-  font-size: var(--upper-nav-font-size)
+.upper-nav .navbar-nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
 }
 
-.top-information .container a i {
-  color: var(--upper-nav-icon-color);
-  margin-right: 0.5rem;
+.upper-nav .navbar-nav a{
+  color: var(--white);
+  font-weight: 500;
+  font-size: 18px;
 }
 
 /* Navbar */
 
 /* Navigation Links  */
 nav ul .nav-item .nav-link {
-  font-weight: 400;
+  font-weight: 500;
   font-size: var(--navigation-link-font-size);
   margin: 0 var(--navigation-link-margin-x);
   color: var(--navigation-link-color);
@@ -98,6 +104,11 @@ nav ul .nav-item .dropdown-item {
   }
 }
 
+nav{
+  margin-bottom: 3rem;
+  background-color: #fff;
+}
+
 /* Dropdown Effect Completed */
 
 /* Navbar Logo */
@@ -146,9 +157,9 @@ nav ul .nav-item .dropdown-item {
 }
 
 /* Navbar Flexbox */
-nav .container {
+/* nav .container {
   flex-wrap: wrap !important;
-}
+} */
 
 .nav-hero .nav-hero-flex {
   display: flex;
@@ -194,16 +205,16 @@ nav .container {
 .nav-hero .nav-hero-flex .hero-elements .img-grid {
   /* display: grid;
   grid-template-columns: repeat(2, 1fr); */
-  column-count: 2;
-  --webkit-column-count: 2;
-  --moz-column-count: 2;
+  /* column-count: 1;
+  --webkit-column-count: 1;
+  --moz-column-count: 1;
   gap: 2rem;
-  row-gap: 2rem;
+  row-gap: 2rem; */
 }
 
 .nav-hero .nav-hero-flex .hero-elements .img-grid img {
   width: 100%;
-  min-height: 15rem;
+  height: 15rem;
   object-fit: cover;
   border-radius: 12px;
   margin-bottom: 1rem
@@ -214,21 +225,21 @@ nav .container {
   transition: all 0.4s ease-in-out;
 }
 
-.nav-hero .nav-hero-flex .hero-elements .img-grid a:nth-of-type(2) img {
+/* .nav-hero .nav-hero-flex .hero-elements .img-grid a:nth-of-type(2) img {
   min-height: 20rem;
-}
+} */
 
 .nav-hero .nav-hero-flex .hero-elements .img-grid a:nth-of-type(1) img {
   margin-top: -2rem;
 }
 
-.nav-hero .nav-hero-flex .hero-elements .img-grid a:nth-of-type(3) img {
+/* .nav-hero .nav-hero-flex .hero-elements .img-grid a:nth-of-type(3) img {
   min-height: 20rem;
 }
 
 .nav-hero .nav-hero-flex .hero-elements .img-grid a:nth-of-type(5) img {
   min-height: 21rem;
-}
+} */
 
 .nav-hero::after {
   position: absolute;
@@ -396,6 +407,29 @@ nav .container {
 }
 
 /* Nav Hero End */
+
+/* Secondary Navbar */
+
+.secondary-nav{
+  background-color: var(--secondary);
+  padding: 0.7rem 0;
+}
+
+.secondary-nav .navbar-nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.secondary-nav .navbar-nav a{
+  color: var(--white);
+  font-weight: 500;
+  font-size: 18px;
+}
+
+/* Secondary navbar end */
 
 /* Numbers Social Proof */
 .social-proof .flex {
