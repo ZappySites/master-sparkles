@@ -14094,7 +14094,7 @@ fieldset:disabled .btn {
       text-align: center !important;
     }
   }
-  
+
   @media (min-width: 1400px) {
     .float-xxl-start {
       float: left !important;
@@ -14818,6 +14818,7 @@ fieldset:disabled .btn {
       text-align: center !important;
     }
   }
+  
   
   @media (min-width: 1200px) {
     .fs-1 {

@@ -45,7 +45,7 @@
   --navigation-link-border-color: var(--primary);
   --navigation-link-text-decoration: none;
   --navigation-link-hover-color: var(--primary);
-  --navigation-link-font-size: 18px;
+  --navigation-link-font-size: 16px;
   --navigation-link-margin-x: 0.4rem;
   --navbar-logo-size: 19rem;
   --upper-nav-font-size: 1.1rem;
@@ -133,7 +133,7 @@
   /* Primary Overlay Section */
   --primary-overlay-bg-color: rgba(0, 134, 255, 0.6);
   --primary-overlay-header-color: var(--white);
-  --primary-overlay-primary-button: var(--primary);
+  --primary-overlay-primary-button: var(--secondary);
   --primary-overlay-primary-button-text: var(--white);
   --primary-overlay-secondary-button: transparent;
   --primary-overlay-secondary-button-text: var(--primary);
@@ -317,4 +317,24 @@
 
 .lb-nav a.lb-prev {
   background: url(/img/prev-chevron.png) left 48% no-repeat !important;
+}
+
+@media (min-width: 1800px) {
+  .d-3xl-none {
+    display: none !important;
+  }
+
+  .d-3xl-inline {
+    display: inline !important;
+  }
+}
+
+@media (max-width: 1800px){
+  .d-3xl-inline {
+    display: none !important;
+  }
+
+  .d-3xl-none {
+    display: inline !important;
+  }
 }

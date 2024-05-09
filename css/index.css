@@ -1,12 +1,17 @@
 @import "/css/custom.css";
 @import "/css/extra.css";
 
+:root {
+  --font-size: 16px;
+}
+
+
 body {
   margin: 0;
   font-family: var(--bs-body-font-family);
-  font-size: var(--bs-body-font-size);
   font-weight: var(--bs-body-font-weight);
   line-height: var(--bs-body-line-height);
+  font-size: var(--font-size);
   color: var(--bs-body-color);
   text-align: var(--bs-body-text-align);
   background-color: var(--bs-body-bg);
@@ -14,14 +19,20 @@ body {
   -webkit-tap-highlight-color: rgba(48, 44, 44, 0);
 }
 
+@media (min-width: 1900px) {
+  body {
+    font-size: 18px !important;
+  }
+
+}
 
 /* Top Information */
 
-.upper-nav{
+.upper-nav {
   background-color: var(--primary);
 }
 
-.upper-nav .navbar-nav{
+.upper-nav .navbar-nav {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -29,7 +40,7 @@ body {
   gap: 2rem;
 }
 
-.upper-nav .navbar-nav a{
+.upper-nav .navbar-nav a {
   color: var(--white);
   font-weight: 500;
   font-size: 18px;
@@ -60,7 +71,6 @@ nav ul .nav-item .nav-link {
     text-align: center;
   }
 }
-
 
 /* Hover Effect on navigation link */
 nav ul .nav-item .nav-link::before {
@@ -104,7 +114,7 @@ nav ul .nav-item .dropdown-item {
   }
 }
 
-nav{
+nav {
   margin-bottom: 3rem;
   background-color: #fff;
 }
@@ -185,7 +195,6 @@ nav{
   /* background-color: var(--dark); */
 }
 
-
 @media (max-width: 992px) {
   .nav-hero .nav-hero-flex {
     flex-direction: column;
@@ -217,7 +226,7 @@ nav{
   height: 15rem;
   object-fit: cover;
   border-radius: 12px;
-  margin-bottom: 1rem
+  margin-bottom: 1rem;
 }
 
 .nav-hero .nav-hero-flex .hero-elements .img-grid img:hover {
@@ -304,7 +313,6 @@ nav{
 }
 
 @media (max-width: 992px) {
-
   .nav-hero .hero h1,
   .nav-hero .inner-hero h1 {
     padding: 0rem;
@@ -312,7 +320,6 @@ nav{
 }
 
 @media (max-width: 768px) {
-
   .nav-hero .hero h1,
   .nav-hero .inner-hero h1 {
     width: 100%;
@@ -322,7 +329,6 @@ nav{
 }
 
 @media (max-width: 576px) {
-
   .nav-hero .hero h1,
   .nav-hero .inner-hero h1 {
     font-size: 35px;
@@ -343,7 +349,6 @@ nav{
 }
 
 @media (max-width: 992px) {
-
   .nav-hero .hero .hero-info,
   .nav-hero .inner-hero .hero-info {
     margin-top: 0.5rem;
@@ -352,7 +357,6 @@ nav{
 }
 
 @media (max-width: 576px) {
-
   .nav-hero .hero .hero-info,
   .nav-hero .inner-hero .hero-info {
     margin-top: 0.5rem;
@@ -365,7 +369,7 @@ nav{
   border: 2px solid var(--hero-primary-button) !important;
   background-color: var(--hero-primary-button) !important;
   color: var(--hero-primary-button-text) !important;
-  transition: all 0.3s
+  transition: all 0.3s;
 }
 
 .nav-hero .hero .btn-primary:hover {
@@ -410,12 +414,12 @@ nav{
 
 /* Secondary Navbar */
 
-.secondary-nav{
+.secondary-nav {
   background-color: var(--secondary);
   padding: 0.7rem 0;
 }
 
-.secondary-nav .navbar-nav{
+.secondary-nav .navbar-nav {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -423,7 +427,7 @@ nav{
   gap: 2rem;
 }
 
-.secondary-nav .navbar-nav a{
+.secondary-nav .navbar-nav a {
   color: var(--white);
   font-weight: 500;
   font-size: 18px;
@@ -437,11 +441,9 @@ nav{
   justify-content: space-between;
 }
 
-
 .social-proof .flex .heading-side {
   width: 43%;
 }
-
 
 .social-proof .flex .numbers-side {
   width: 55%;
@@ -512,7 +514,6 @@ nav{
   margin-bottom: 1rem;
 }
 
-
 .about-us .about-us-flex .info-div .icon-div {
   margin-right: 1rem;
 }
@@ -527,16 +528,15 @@ nav{
   width: 5rem;
 }
 
-
 .about-us .about-us-flex .information .title {
   font-size: 20px;
   font-weight: 500;
   margin-bottom: 0.5rem;
 }
 
-.about-us .about-us-flex .information p{
+/* .about-us .about-us-flex .information p{
   font-size: 18px;
-}
+} */
 
 @media (max-width: 992px) {
   .about-us .about-us-flex .info-div {
@@ -568,7 +568,6 @@ nav{
 }
 
 /* About Us End */
-
 
 /* Services Section */
 .services {
@@ -688,7 +687,6 @@ nav{
 
 /* Services End */
 
-
 /* How it works */
 
 .how-it-works .flex {
@@ -752,7 +750,8 @@ nav{
   color: #fff;
   font-size: 19px;
 }
-.how-it-works .flex .column h4, .how-it-works .flex .column .h4 {
+.how-it-works .flex .column h4,
+.how-it-works .flex .column .h4 {
   font-size: 24px;
   font-weight: 600;
 }
@@ -764,7 +763,14 @@ nav{
 
 /* Points about us */
 .point-about-us {
-  background: linear-gradient(to top, #0759a1, #0364b9, #026cc9, #0b70c9, #0086ff);
+  background: linear-gradient(
+    to top,
+    #0759a1,
+    #0364b9,
+    #026cc9,
+    #0b70c9,
+    #0086ff
+  );
   padding: 4rem 0;
   position: relative;
 }
@@ -831,7 +837,8 @@ nav{
   gap: 1.5rem;
   margin-bottom: 2rem;
 }
-.point-about-us .flex .points-side .point h5, .point-about-us .flex .points-side .point .h5,
+.point-about-us .flex .points-side .point h5,
+.point-about-us .flex .points-side .point .h5,
 .point-about-us .flex .points-side .point p {
   color: #fff;
 }
@@ -850,7 +857,8 @@ nav{
   font-size: 18px;
   color: #2358e5;
 }
-.point-about-us .flex .points-side .point .info h5, .point-about-us .flex .points-side .point .info .h5 {
+.point-about-us .flex .points-side .point .info h5,
+.point-about-us .flex .points-side .point .info .h5 {
   font-size: 19px;
   font-weight: 600;
 }
@@ -938,7 +946,6 @@ nav{
   z-index: 2;
 }
 
-
 .testimonials .flex .headline-side .quote {
   width: 6rem;
   height: 6rem;
@@ -952,7 +959,6 @@ nav{
   top: 13%;
   left: 3%;
 }
-
 
 .testimonials .flex .headline-side .quote i {
   font-size: 3rem;
@@ -987,7 +993,6 @@ nav{
     height: var(--testomonials-left-height);
   }
 
-
   .testimonials .bg-img {
     height: var(--testomonials-left-height);
   }
@@ -1002,7 +1007,7 @@ nav{
 
   .testimonials .bg-img {
     border-top-right-radius: inherit;
-    border-bottom-right-radius: inherit
+    border-bottom-right-radius: inherit;
   }
 
   .testimonials::after {
@@ -1031,7 +1036,6 @@ nav{
   }
 }
 
-
 .testimonials .flex .testimonials-side h6 {
   position: relative;
   font-size: 28px;
@@ -1048,9 +1052,8 @@ nav{
   background-color: var(--primary);
   bottom: -1rem;
   left: 50%;
-  transform: translateX(-50%)
+  transform: translateX(-50%);
 }
-
 
 .testimonials .flex .testimonials-side .testimonial {
   margin: 2rem 2rem;
@@ -1063,10 +1066,15 @@ nav{
 }
 
 .testimonials .flex .testimonials-side .testimonial .comment {
-  font-size: 18px;
   line-height: 33px;
   margin-bottom: 1rem;
   text-align: center;
+}
+
+@media (min-width: 1900px) {
+  .testimonials .flex .testimonials-side .testimonial .comment {
+    font-size: 18px;
+  }
 }
 
 .testimonials .flex .testimonials-side .testimonial .ratings {
@@ -1074,7 +1082,7 @@ nav{
 }
 
 .testimonials .flex .testimonials-side .testimonial .ratings i {
-  color: #FF9529;
+  color: #ff9529;
   font-size: 20px;
 }
 
@@ -1084,7 +1092,6 @@ nav{
   margin-top: 1rem;
   font-weight: 600;
   color: var(--primary);
-
 }
 
 .testimonials .flex .testimonials-side .testimonial .city {
@@ -1151,7 +1158,7 @@ nav{
 .testimonials .flex .testimonials-side .ratings-grid .ratings-card .ratings {
   font-size: 0.85rem;
   line-height: 24px;
-  color: #FF9529;
+  color: #ff9529;
   /*Ratings Color*/
   margin-top: 0.5rem;
 }
@@ -1161,7 +1168,7 @@ nav{
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  .testimonials .flex .testimonials-side .ratings-grid>*:nth-child(3) {
+  .testimonials .flex .testimonials-side .ratings-grid > *:nth-child(3) {
     grid-column: span 2;
     /* Makes it take full width in second row */
   }
@@ -1174,7 +1181,6 @@ nav{
   right: -5rem;
   top: 30%;
   transform: translateY(-80%);
-
 }
 
 .testimonials .flex .testimonials-side .slick-dots .slick-active button {
@@ -1193,12 +1199,12 @@ nav{
 
 .testimonials .flex .testimonials-side .left-arrow {
   left: 48%;
-  transform: translateX(-100%)
+  transform: translateX(-100%);
 }
 
 .testimonials .flex .testimonials-side .right-arrow {
   right: 48%;
-  transform: translateX(100%)
+  transform: translateX(100%);
 }
 
 /* CTA Section */
@@ -1271,7 +1277,6 @@ nav{
 }
 
 @media (max-width: 992px) {
-
   .secondary-about-us .flex,
   .secondary-about-us.flipped .flex {
     flex-direction: column-reverse;
@@ -1330,7 +1335,7 @@ nav{
   border-radius: 50%;
 }
 
-.secondary-about-us .flex .img-side .icon-description p{
+.secondary-about-us .flex .img-side .icon-description p {
   font-size: 18px;
 }
 
@@ -1359,7 +1364,6 @@ nav{
   }
 }
 
-
 /* Contact Info with Map */
 .contact-info .contact-info-flex {
   display: flex;
@@ -1371,7 +1375,7 @@ nav{
   flex: 1;
   padding-left: 3rem;
   padding: 3rem 2rem 3rem 5rem;
-  background-color: var(--dark)
+  background-color: var(--dark);
 }
 
 .contact-info .contact-info-flex .info-side h3 {
@@ -1384,7 +1388,7 @@ nav{
 .contact-info .contact-info-flex .info-side .contact-paragraph {
   font-size: 17px;
   line-height: 27px;
-  margin-bottom: 2rem
+  margin-bottom: 2rem;
 }
 
 .contact-info .contact-info-flex .info-side .icon-info {
@@ -1397,7 +1401,7 @@ nav{
 .contact-info .contact-info-flex .info-side .icon-info i {
   color: var(--primary);
   font-size: 28px;
-  margin-right: 1rem
+  margin-right: 1rem;
 }
 
 .contact-info .contact-info-flex .map-side {
@@ -1439,8 +1443,6 @@ nav{
   }
 }
 
-
-
 /* Footer Section */
 
 footer .logo {
@@ -1457,10 +1459,9 @@ footer .footer-col a {
 }
 footer .footer-col .text-info p {
   margin-bottom: 0.9rem;
-  font-size: 18px;
 }
 
-footer .footer-col .text-info p i{
+footer .footer-col .text-info p i {
   font-size: 20px;
 }
 
@@ -1850,12 +1851,11 @@ section {
   margin-bottom: 0.5rem;
 }
 
-
 .dropdown-submenu {
   position: relative;
 }
 
-.dropdown-submenu>.dropdown-menu {
+.dropdown-submenu > .dropdown-menu {
   top: 0;
   left: 100%;
   margin-top: -6px;
@@ -1866,17 +1866,17 @@ section {
   padding: 0.5rem 1rem;
 }
 
-.dropdown:hover>.dropdown-menu {
+.dropdown:hover > .dropdown-menu {
   display: block;
   background-color: var(--dark);
 }
 
-.dropdown:hover>.dropdown-menu a {
+.dropdown:hover > .dropdown-menu a {
   color: var(--white);
   font-weight: 500;
 }
 
-.dropdown:hover>.dropdown-menu li {
+.dropdown:hover > .dropdown-menu li {
   padding: 0.3rem 0.2rem;
 }
 
@@ -1912,11 +1912,11 @@ section {
   background-color: #555555;
 }
 
-.dropdown-submenu:hover>.dropdown-menu {
+.dropdown-submenu:hover > .dropdown-menu {
   display: block;
 }
 
-.dropdown-submenu>a:after {
+.dropdown-submenu > a:after {
   display: block;
   content: " ";
   float: right;
@@ -1930,10 +1930,9 @@ section {
   margin-right: -10px;
 }
 
-.dropdown-submenu:hover>a:after {
+.dropdown-submenu:hover > a:after {
   border-left-color: #fff;
 }
-
 
 .primary-button {
   font-family: "Ropa Sans", sans-serif;
