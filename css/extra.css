@@ -807,6 +807,32 @@ progress {
     }
 }
 
+/* @media (min-width: 1440px) {
+
+  .container-xxl,
+  .container-xl,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-vm,
+  .container {
+      max-width: 1410px;
+  }
+} */
+
+@media (min-width: 1900px) {
+
+  .container-xxl,
+  .container-xl,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-vm,
+  .container {
+      max-width: 1620px;
+  }
+}
+
 :root {
     --bs-breakpoint-xs: 0;
     --bs-breakpoint-vm: 390px;
