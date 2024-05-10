@@ -45,7 +45,7 @@
   --navigation-link-border-color: var(--primary);
   --navigation-link-text-decoration: none;
   --navigation-link-hover-color: var(--primary);
-  --navigation-link-font-size: 16px;
+  --navigation-link-font-size: 18px;
   --navigation-link-margin-x: 0.4rem;
   --navbar-logo-size: 19rem;
   --upper-nav-font-size: 1.1rem;
@@ -254,6 +254,9 @@
 }
 
 /* Primary Overlay */
+.primary-overlay{
+  padding: 3rem 0;
+}
 .primary-overlay::after {
   position: absolute;
   content: "";
@@ -263,6 +266,17 @@
   top: 0;
   left: 0;
   z-index: -1;
+}
+
+.primary-overlay .bg-img{
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  filter: brightness(30%);
 }
 
 .primary-overlay .sub-header {
@@ -319,7 +333,7 @@
   background: url(/img/prev-chevron.png) left 48% no-repeat !important;
 }
 
-@media (min-width: 1800px) {
+@media (min-width: 1550px) {
   .d-3xl-none {
     display: none !important;
   }
@@ -329,7 +343,7 @@
   }
 }
 
-@media (max-width: 1800px){
+@media (max-width: 1550px){
   .d-3xl-inline {
     display: none !important;
   }

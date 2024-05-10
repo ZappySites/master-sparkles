@@ -803,7 +803,7 @@ progress {
     .container-sm,
     .container-vm,
     .container {
-        max-width: 1360px;
+        max-width: 1380px;
     }
 }
 
@@ -819,6 +819,20 @@ progress {
       max-width: 1410px;
   }
 } */
+
+@media (min-width: 1550px) {
+
+  .container-xxl,
+  .container-xl,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-vm,
+  .container {
+      max-width: 1520px;
+  }
+}
+
 
 @media (min-width: 1900px) {
 
