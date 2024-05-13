@@ -60,9 +60,9 @@
     rgba(0, 0, 0, 0.7876400560224089) 64%
   );
   --hero-heading-color: var(--white);
-  --hero-font-size: 50px;
+  --hero-font-size: 48px;
   --hero-font-weight: 600;
-  --hero-highlighted-text: var(--primary);
+  --hero-highlighted-text:  #00f1ff;
   --hero-highlighted-text-font-weight: 700;
   --hero-paragraph-font-size: 19px;
   --hero-paragraph-font-weight: 400;
@@ -163,7 +163,7 @@
 .light-section .sub-header::after {
   background-color: var(--light-section-sub-header-border-color);
 }
-
+/* 
 .light-section .btn-primary {
   border: 2px solid var(--light-section-primary-button) !important;
   background-color: var(--light-section-primary-button) !important;
@@ -172,9 +172,9 @@
 
 .light-section .btn-primary:hover {
   border: 2px solid var(--light-section-primary-button) !important;
-  background-color: transparent !important;
+  background: transparent !important;
   color: var(--light-section-primary-button) !important;
-}
+} 
 
 .light-section .btn-secondary {
   border: 2px solid var(--light-section-secondary-button-text) !important;
@@ -186,7 +186,7 @@
   border: 2px solid var(--light-section-secondary-button-text) !important;
   background-color: var(--light-section-secondary-button-text) !important;
   color: var(--white) !important;
-}
+} */
 
 .light-section .btn {
   border-radius: var(--light-section-button-border-radius) !important;
@@ -220,7 +220,7 @@
 .dark-section .sub-header::after {
   background-color: var(--dark-section-sub-header-border-color);
 }
-
+/* 
 .dark-section .btn-primary {
   border: 2px solid var(--dark-section-primary-button) !important;
   background-color: var(--dark-section-primary-button) !important;
@@ -243,7 +243,7 @@
   border: 2px solid var(--dark-section-secondary-button-text) !important;
   background-color: var(--dark-section-secondary-button-text) !important;
   color: var(--white) !important;
-}
+} */
 
 .dark-section .link {
   color: var(--dark-section-ahref-color);
@@ -292,9 +292,9 @@
   background-color: var(--primary-overlay-sub-header-border-color);
 }
 
-.primary-overlay .btn-primary {
+/* .primary-overlay .btn-primary {
   border: 2px solid var(--primary-overlay-primary-button) !important;
-  background-color: var(--primary-overlay-primary-button) !important;
+  background: var(--primary-overlay-primary-button) !important;
   color: var(--primary-overlay-primary-button-text) !important;
 }
 
@@ -314,7 +314,7 @@
   border: 2px solid var(--primary-overlay-secondary-button-text) !important;
   background-color: var(--primary-overlay-secondary-button-text) !important;
   color: var(--white) !important;
-}
+} */
 
 /* Hyperlinks */
 .link {
