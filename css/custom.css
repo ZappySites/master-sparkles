@@ -333,7 +333,7 @@
   background: url(/img/prev-chevron.png) left 48% no-repeat !important;
 }
 
-@media (min-width: 1550px) {
+@media (min-width: 1700px) {
   .d-3xl-none {
     display: none !important;
   }
@@ -343,7 +343,7 @@
   }
 }
 
-@media (max-width: 1550px){
+@media (max-width: 1700px){
   .d-3xl-inline {
     display: none !important;
   }
