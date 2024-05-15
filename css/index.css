@@ -884,6 +884,7 @@ nav {
 .point-about-us .flex .points-side .point .info .h5 {
   font-size: 19px;
   font-weight: 600;
+  text-transform: capitalize;
 }
 .point-about-us .flex .points-side .point .pill-btn {
   background-color: #fff;
