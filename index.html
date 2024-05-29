@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1.0, user-scalable=no">
     <title>
-        TEST Professional Cleaning Services in Perth | Master Sparkles
+        Professional Cleaning Services in Perth | Master Sparkles
     </title>
 
     <meta name="description"
@@ -28,6 +28,21 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
     <link rel="manifest" href="/img/site.webmanifest">
+	<style>
+	  .slider-container {
+		width: 100%;
+		overflow: hidden;
+		position: relative;
+	  }
+	  .slider {
+		display: flex;
+		transition: transform 0.5s ease-in-out;
+	  }
+	  .logo {
+		width: 100px; /* Adjust as needed */
+		margin-right: 20px; /* Adjust as needed */
+	  }
+	</style>
 </head>
 
 <body>
@@ -351,6 +366,35 @@
             </div>
         </div>
     </section>
+	
+	<!-- Slider -->
+	<section class="container">
+		<div class="slider-container">
+		  <div class="slider">
+			<img class="logo" src="img/brand1.png" alt="Logo 1">
+			<img class="logo" src="img/brand2.png" alt="Logo 2">
+			<img class="logo" src="img/brand3.png" alt="Logo 3">
+			<img class="logo" src="img/brand4.png" alt="Logo 4">
+			<img class="logo" src="img/brand5.png" alt="Logo 5">
+		  </div>
+		</div>
+	</section>
+	<script>
+	  const slider = document.querySelector('.slider');
+	  let slideIndex = 0;
+
+	  function slide() {
+		slideIndex++;
+		if (slideIndex >= slider.children.length) {
+		  slideIndex = 0;
+		}
+		const offset = -slideIndex * slider.children[0].offsetWidth;
+		slider.style.transform = `translateX(${offset}px)`;
+	  }
+
+	  setInterval(slide, 3000); // Change slide every 3 seconds
+	</script>
+
 
     <!-- About -->
     <section id="about" class="about-us light-section position-relative" data-aos="fade-up">
