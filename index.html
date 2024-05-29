@@ -36,6 +36,7 @@
 	  .slider {
 		display: flex;
 		transition: transform 0.5s ease-in-out;
+		justify-content: space-between;
 	  }
 	  .sliderlogo {
 		width: 100px; /* Adjust as needed */
@@ -370,28 +371,48 @@
 	<section class="container">
 		<div class="slider-container">
 		  <div class="slider">
-			<img class="sliderlogo" src="img/brand1.png" alt="Logo 1">
-			<img class="sliderlogo" src="img/brand2.png" alt="Logo 2">
-			<img class="sliderlogo" src="img/brand3.png" alt="Logo 3">
-			<img class="sliderlogo" src="img/brand4.png" alt="Logo 4">
-			<img class="sliderlogo" src="img/brand5.png" alt="Logo 5">
+			<img class="sliderlogo" src="img/brand1.PNG" alt="Logo 1">
+			<img class="sliderlogo" src="img/brand2.PNG" alt="Logo 2">
+			<img class="sliderlogo" src="img/brand3.PNG" alt="Logo 3">
+			<img class="sliderlogo" src="img/brand4.PNG" alt="Logo 4">
+			<img class="sliderlogo" src="img/brand5.PNG" alt="Logo 5">
 		  </div>
 		</div>
 	</section>
 	<script>
-  const slider = document.querySelector('.slider');
-  let slideIndex = 0;
+const slider = document.querySelector('.slider');
+let slideIndex = 0;
 
-  function slide() {
-    slideIndex++;
-    if (slideIndex >= slider.children.length) {
-      slideIndex = 0;
-    }
-    const offset = -slideIndex * slider.children[0].offsetWidth;
-    slider.style.transform = `translateX(${offset}px)`;
+function slide() {
+  slideIndex++;
+  if (slideIndex >= slider.children.length) {
+    slideIndex = 0;
   }
+  const offset = -slideIndex * slider.children[0].offsetWidth;
+  slider.style.transition = 'transform 0.5s ease-in-out';
+  slider.style.transform = `translateX(${offset}px)`;
+}
 
-  setInterval(slide, 3000); // Change slide every 3 seconds
+function resetSlide() {
+  slideIndex = 0;
+  slider.style.transition = 'none';
+  const offset = -slideIndex * slider.children[0].offsetWidth;
+  slider.style.transform = `translateX(${offset}px)`;
+}
+
+// Clone the first logo and append it to the end
+const firstLogo = slider.children[0].cloneNode(true);
+slider.appendChild(firstLogo);
+
+setInterval(slide, 3000); // Change slide every 3 seconds
+
+// Reset slide to the first logo after transition ends
+slider.addEventListener('transitionend', function() {
+  if (slideIndex === slider.children.length - 1) {
+    resetSlide();
+  }
+});
+
 </script>
 
 
